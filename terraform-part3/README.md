@@ -219,7 +219,3 @@ terraform destroy
 This will delete all AWS infrastructure created during deployment.
 
 ---
-
-## Author
-
-Assignment submission for Docker, Terraform, and AWS ECS deployment.
