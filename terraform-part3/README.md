@@ -42,7 +42,7 @@ User requests flow through the Application Load Balancer and are routed to appro
  Express Frontend     Flask Backend
     (Port 3000)         (Port 5000)
         │                │
-        └──── ECS Fargate Tasks ────┘
+        └──── ECS Fargate Tasks 
                     │
                     ▼
             Docker Containers
@@ -61,22 +61,29 @@ Routing configuration:
 ## Project Structure
 
 ```
-flask-express-terraform/
+terraform-part3/
 │
 ├── express-app/
 │   ├── Dockerfile
-│   └── app.js
+│   ├── package.json
+│   ├── server.js
+│   └── README.md
 │
 ├── flask-app/
 │   ├── Dockerfile
-│   └── app.py
+│   ├── app.py
+│   └── requirements.txt
 │
 ├── terraform/
-│   └── main.tf
+│   ├── backend.tf
+│   ├── main.tf
+│   ├── provider.tf
+│   ├── variables.tf
+│   └── outputs.tf
 │
+├── .gitignore
 └── README.md
 ```
-
 ---
 
 ## Step 1: Build Docker Images
