@@ -191,6 +191,5 @@ terraform destroy
 * Managing infrastructure using Terraform
 * Implementing microservices architecture on AWS
 
-
-DevOps Assignment Submission
+---
 
